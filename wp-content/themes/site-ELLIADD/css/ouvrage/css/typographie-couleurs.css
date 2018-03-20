@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css?family=Oxygen');
+
+/*-------------------------------------------------------
+Général
+-------------------------------------------------------*/
+
+html {
+    --AL: #e73638;
+    --CCM: #44beed;
+    --CLD: #6fb52b;
+    --DTEPS: #fbbf02;
+    --ERCOS: #ac6fe5;
+}
+
+body {
+    font-family: 'Oxygen', sans-serif;
+    background-color: #e6ebf0;
+    line-height: 23px;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-weight: normal;
+}
+
+body > main {
+    background-color: #fff;
+}
+
+body > main > section > h2,
+body:not(#acceuil) > main > section > h1 {
+    font-size: 1.5rem;
+}
+
+body > main > section > h2::after,
+body:not(#acceuil) > main > section > h1::after {
+    background-color: #cccccc;
+}
+
+.coulAL{
+    color: var(--AL);
+}
+.coulCCM{
+    color: var(--CCM);
+}
+.coulCLD{
+    color: var(--CLD);
+}
+.coulDTEPS{
+    color: var(--DTEPS);
+}
+.coulERCOS{
+    color: var(--ERCOS);
+}
+
+.AL {
+    background-color: var(--AL);
+}
+
+.CCM {
+    background-color: var(--CCM);
+}
+
+.CLD {
+    background-color: var(--CLD);
+}
+
+.DTEPS {
+    background-color: var(--DTEPS);
+}
+
+.ERCOS {
+    background-color: var(--ERCOS);
+}
+
+/*----------------------------------------
+header
+----------------------------------------*/
+
+body > header > div a {
+    text-decoration: none;
+    color: black;
+}
+
+body > header > div {
+    background-color: #bebecc;
+}
+
+/*menu principal*/
+
+body > header > div > nav.menu_princ > ul > li {
+    text-align: center;
+    line-height: 1rem;
+    background: transparent;
+    transition: background 500ms linear .3s;
+}
+
+body > header > div > nav.menu_princ > ul > li > ul {
+    background-color: #f0f0f0;
+}
+
+body > header > div > nav.menu_princ > ul > li > ul > li > a {
+    word-wrap: break-word;
+}
+
+body > header > div > nav.menu_princ > ul > li > ul > li > a:hover {
+    color: white
+}
+
+body > header > div > nav.menu_princ > ul > li > ul > li:hover {
+    background-color: #6a7480;
+}
+
+/*--------------------------------------------------------------
+accueil
+--------------------------------------------------------------*/
+/*------------------Main---------------------------*/
+
+/*publication*/
+body#acceuil > main > section > div.publication > div {
+    background-color: #f0f0f0;
+}
+
+body#acceuil > main > section > div.publication > div > span:first-of-type {
+    text-align: right;
+}
+
+/*aside*/
+body#acceuil > main > aside {
+    background-color: white;
+}
+
+body#acceuil > main > aside > p > a {
+    color: black;
+}
+
+/*--------------------------------------------------------------
+Page tri chercheur
+--------------------------------------------------------------*/
+
+.trie > span {
+    text-align: center;
+}
+
+.extrait-chercheur > h3 {
+    line-height: 1.2rem;
+    font-size: 1.2rem;
+}
+
+/*-----------------------------------------------------
+Profil chercheur
+-----------------------------------------------------*/
+
+body.single-membres > main > section > div:first-of-type > ul > li > span {
+    color: var(--CCM);
+    font-weight: bold;
+}
+
+body.single-membres > main > section > div:nth-of-type(3) > h3:hover{
+    font-weight: bold;
+}
+
+/*--------------------------------------------------------------
+Page Contact
+--------------------------------------------------------------*/
+
+body#contact > main > section > .elemcontact > p:first-of-type > strong {
+    color: var(--AL);
+}
+
+body#contact > main > section > .elemcontact > p:nth-of-type(2) > strong {
+    color: var(--CCM);
+}
+
+body#contact > main > section > .elemcontact > p:nth-of-type(3) > strong {
+    color: var(--CLD);
+}
+
+body#contact > main > section > .elemcontact > p:nth-of-type(4) > strong {
+    color: var(--DTEPS);
+}
+
+body#contact > main > section > .elemcontact > p:nth-of-type(5) > strong {
+    color: var(--ERCOS);
+}
+
+body#contact > main > section a {
+    color: black;
+}
+
+body#contact > main > section a:hover {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/*-----------------------------------------------------
+Footer
+-----------------------------------------------------*/
+
+body > footer {
+    background-color: #cccccc;
+}
+
+body > footer > ul {
+font-size: 12px;
+}
+
+
+body > footer > ul > li > a {
+    text-decoration: none;
+    color: black;
+}
+
+/*-------------------------------------------------------------------------------
+Media queries
+-------------------------------------------------------------------------------*/
+
+@media all and (min-width: 940px) {
+    body > header > div > nav.menu_princ > ul > li:hover {
+        background-color: #f0f0f0;
+        transition: none;
+    }
+}
+
+@media all and (max-width: 940px) {
+    body > header > div > nav.menu_princ {
+        background-color: #f0f0f0;
+    }
+
+    body > header > div > nav.menu_princ > ul {
+        background-color: #f0f0f0;
+    }
+}

@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css?family=Oxygen');
+
+/*-------------------------------------------------------
+Général
+-------------------------------------------------------*/
+
+html {
+    --AL: #e73638;
+    --CCM: #44beed;
+    --CLD: #6fb52b;
+    --DTEPS: #fbbf02;
+    --EECDS: #ac6fe5;
+}
+
+body {
+    font-family: 'Oxygen', sans-serif;
+    background-color: #e6ebf0;
+    line-height: 23px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+
+body:not(.home) h4 {
+    text-decoration: underline;
+}
+
+a {
+    color: black;
+}
+
+body > main {
+    background-color: #fff;
+}
+
+body > main > section > h2,
+body:not(.home) > main > section > h1 {
+    font-size: 1.5rem;
+}
+
+body > main > section > h2::after,
+body:not(.home) > main > section > h1::after {
+    background-color: #cccccc;
+}
+
+.coulAL {
+    color: var(--AL);
+}
+
+.coulCCM {
+    color: var(--CCM);
+}
+
+.coulCLD {
+    color: var(--CLD);
+}
+
+.coulDTEPS {
+    color: var(--DTEPS);
+}
+
+.coulEECDS {
+    color: var(--EECDS);
+}
+
+.AL {
+    background-color: var(--AL);
+}
+
+.CCM {
+    background-color: var(--CCM);
+}
+
+.CLD {
+    background-color: var(--CLD);
+}
+
+.DTEPS {
+    background-color: var(--DTEPS);
+}
+
+.EECDS {
+    background-color: var(--EECDS);
+}
+
+.gris_bloc {
+    background-color: #bebecc;
+}
+
+/*----------------------------------------
+header
+----------------------------------------*/
+
+body > header > div a {
+    text-decoration: none;
+    color: black;
+}
+
+body > header > div {
+    background-color: #bebecc;
+}
+
+/*menu principal*/
+
+body > header > div > nav.menu_princ > ul > li {
+    text-align: center;
+    line-height: 1rem;
+    background: transparent;
+    transition: background 500ms linear .3s;
+}
+
+body > header > div > nav.menu_princ > ul > li > ul {
+    background-color: #f0f0f0;
+}
+
+body > header > div > nav.menu_princ > ul > li > ul > li > a {
+    word-wrap: break-word;
+}
+
+body > header > div > nav.menu_princ > ul > li > ul > li > a:hover {
+    color: white
+}
+
+body > header > div > nav.menu_princ > ul > li > ul > li:hover {
+    background-color: #6a7480;
+}
+
+body > header > div > nav.menu_princ > ul > li:last-of-type > span > i {
+    font-style: normal;
+}
+
+/*Bouton connexion*/
+body > header > div > div:last-child > span {
+    border: 1px solid #9a9aa6;
+    background-color: #9a9aa6;
+}
+
+body > header > div > div:last-child > span:hover {
+    background-color: transparent;
+}
+
+/*--------------------------------------------------------------
+page archive
+--------------------------------------------------------------*/
+
+body.post-type-archive div.publication > div > h2 {
+    font-weight: bold;
+}
+
+body.post-type-archive div.publication > div > h2 > a {
+    text-decoration: none;
+}
+
+body.post-type-archive div.publication > div > h2:hover > a {
+    text-decoration: underline;
+}
+
+/*publications*/
+
+body.post-type-archive div.publication > div > div > h2 {
+    font-weight: bold;
+}
+
+body.post-type-archive div.publication > div > div > h2 > a {
+    text-decoration: none;
+}
+
+body.post-type-archive div.publication > div > div > h2:hover > a {
+    text-decoration: underline;
+}
+
+/*--------------------------------------------------------------
+accueil
+--------------------------------------------------------------*/
+/*------------------Main---------------------------*/
+
+/*publication*/
+body > main > section > div.publication > div {
+    background-color: #f0f0f0;
+}
+
+body > main > section > div.publication > div > a {
+    text-decoration: none;
+    color: black;
+    text-align: right;
+}
+
+/*aside*/
+body.home > main > aside {
+    background-color: white;
+}
+
+body.home > main > aside > p > a {
+    color: black;
+}
+
+/*--------------------------------------------------------------
+Page tri chercheur
+--------------------------------------------------------------*/
+
+.trie > span {
+    text-align: center;
+}
+
+.extrait-membre > h3 {
+    line-height: 1.2rem;
+    font-size: 1.2rem;
+}
+
+/*-----------------------------------------------------
+Profil chercheur
+-----------------------------------------------------*/
+
+body.single-membres > main > section > div:first-of-type > ul > li > span {
+    color: var(--CCM);
+    font-weight: bold;
+}
+
+body.single-membres > main > section > div:nth-of-type(3) > h3:hover {
+    font-weight: bold;
+}
+
+/*--------------------------------------------------------------
+Page ouvrage revues
+--------------------------------------------------------------*/
+
+body.tax-typePub > main > section > div > div {
+    background-color: #f0f0f0;
+}
+
+body.tax-typePub > main > section > div > div > div > h3 {
+    font-weight: bold;
+}
+
+body.term-ouvrages > main > section > div > div > div > span {
+    text-align: right;
+}
+
+body.term-ouvrages > main > section > div > div > div > span > em > a {
+    color: inherit;
+}
+
+/*--------------------------------------------------------------
+Page Contact
+--------------------------------------------------------------*/
+
+body#contact > main > section > .elemcontact > p:first-of-type > strong {
+    color: var(--AL);
+}
+
+body#contact > main > section > .elemcontact > p:nth-of-type(2) > strong {
+    color: var(--CCM);
+}
+
+body#contact > main > section > .elemcontact > p:nth-of-type(3) > strong {
+    color: var(--CLD);
+}
+
+body#contact > main > section > .elemcontact > p:nth-of-type(4) > strong {
+    color: var(--DTEPS);
+}
+
+body#contact > main > section > .elemcontact > p:nth-of-type(5) > strong {
+    color: var(--EECDS);
+}
+
+body#contact > main > section a {
+    color: black;
+}
+
+body#contact > main > section a:hover {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/*--------------------------------------------------------------
+Page 404
+--------------------------------------------------------------*/
+
+body.error404 > main > section > h3 {
+    padding-top: 100px;
+    color: #e73638;
+    text-transform: uppercase;
+    font-size: 100px;
+    line-height: 100px;
+    text-align: center;
+}
+
+body.error404 > main > section > p {
+    text-align: center;
+    color: #e73638;
+    font-size: 22px;
+}
+
+/*-----------------------------------------------------
+Footer
+-----------------------------------------------------*/
+
+body > footer {
+    background-color: #cccccc;
+}
+
+body > footer > ul {
+    font-size: 12px;
+}
+
+body > footer > ul > li > a {
+    text-decoration: none;
+    color: black;
+}
+
+/*-------------------------------------------------------------------------------
+Media queries
+-------------------------------------------------------------------------------*/
+
+@media all and (min-width: 940px) {
+    body > header > div > nav.menu_princ > ul > li:hover {
+        background-color: #f0f0f0;
+        transition: none;
+    }
+}
+
+@media all and (max-width: 940px) {
+    body > header > div > nav.menu_princ > ul > li > ul.visible {
+        background-color: #bebecc;
+    }
+
+    body > header > div > nav.menu_princ {
+        background-color: #f0f0f0;
+    }
+
+    body > header > div > nav.menu_princ > ul {
+        background-color: #f0f0f0;
+    }
+}
